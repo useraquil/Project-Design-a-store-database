@@ -1,0 +1,18 @@
+create table store(id INTEGER PRIMARY KEY,name TEXT,quantity INTEGER,price INTEGER,aisle INTEGER);
+insert into store values(1,"TOOTHBRUSH",3,25,1);
+insert into store values(2,"SOAP",3,35,2);
+insert into store values(3,"SURF",6,15,3);
+insert into store values(4,"CUP",3,25,4);
+insert into store values(5,"CLOACK",4,150,1);
+insert into store values(6,"TEA BAG",7,60,2);
+insert into store values(7,"SURF",3,15,3);
+insert into store values(8,"COFFE",3,25,4);
+insert into store values(9,"PAINTS",8,25,1);
+insert into store values(10,"BULBS",3,35,2);
+insert into store values(11,"COOKER",10,15,3);
+insert into store values(12,"GLASSES",4,25,4);
+insert into store values(13,"WATER BOTTLES",3,25,1);
+insert into store values(14,"COCA_COLA",3,30,2);
+insert into store values(15,"CANDIES",3,15,3);
+Select * from store order by price;
+select sum(quantity) from store group by price;
